@@ -1,4 +1,5 @@
-import { defineConfig, devices } from '@playwright/test';
+import type { PlaywrightTestConfig } from '@playwright/test';
+import { devices } from '@playwright/test';
 
 /**
  * Read environment variables from file.
@@ -9,7 +10,7 @@ import { defineConfig, devices } from '@playwright/test';
 /**
  * See https://playwright.dev/docs/test-configuration.
  */
-export default defineConfig({
+const config: PlaywrightTestConfig = {
   testDir: './tests',
   /* Maximum time one test can run for. */
   timeout: 5 * 60 * 1000,
@@ -56,4 +57,6 @@ export default defineConfig({
       use: { ...devices['Desktop Safari'] },
     },
   ],
-});
+};
+
+export default config;
