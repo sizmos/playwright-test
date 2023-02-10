@@ -1,0 +1,25 @@
+{
+  "name": "playwright-test",
+  "version": "1.0.0",
+  "description": "Repo to test playwright",
+  "main": "index.js",
+  "scripts": {
+    "chrome": "npx playwright test  --project=chrome",
+    "iphone": "npx playwright test  --project=iphone",
+    "safari": "npx playwright test  --project=safari"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sizmos/playwright-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sizmos/playwright-test/issues"
+  },
+  "homepage": "https://github.com/sizmos/playwright-test#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.27.1"
+  }
+}
